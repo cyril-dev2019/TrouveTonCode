@@ -111,6 +111,9 @@
             "./config/packages/sensio_framework_extra.yaml"
         ]
     },
+    "symfony/asset": {
+        "version": "v4.3.1"
+    },
     "symfony/cache": {
         "version": "v4.3.1"
     },
@@ -132,6 +135,9 @@
             "./bin/console",
             "./config/bootstrap.php"
         ]
+    },
+    "symfony/contracts": {
+        "version": "v1.1.0"
     },
     "symfony/debug": {
         "version": "v4.3.1"
@@ -169,6 +175,9 @@
             "./.env"
         ]
     },
+    "symfony/form": {
+        "version": "v4.3.1"
+    },
     "symfony/framework-bundle": {
         "version": "4.2",
         "recipe": {
@@ -197,6 +206,9 @@
     "symfony/inflector": {
         "version": "v4.3.1"
     },
+    "symfony/intl": {
+        "version": "v4.3.1"
+    },
     "symfony/maker-bundle": {
         "version": "1.0",
         "recipe": {
@@ -209,8 +221,14 @@
     "symfony/mime": {
         "version": "v4.3.1"
     },
+    "symfony/options-resolver": {
+        "version": "v4.3.1"
+    },
     "symfony/orm-pack": {
         "version": "v1.0.6"
+    },
+    "symfony/polyfill-intl-icu": {
+        "version": "v1.11.0"
     },
     "symfony/polyfill-intl-idn": {
         "version": "v1.11.0"
@@ -278,6 +296,9 @@
     "symfony/stopwatch": {
         "version": "v4.3.1"
     },
+    "symfony/translation-contracts": {
+        "version": "v1.1.2"
+    },
     "symfony/twig-bridge": {
         "version": "v4.3.1"
     },
@@ -293,6 +314,19 @@
             "./config/packages/twig.yaml",
             "./config/routes/dev/twig.yaml",
             "./templates/base.html.twig"
+        ]
+    },
+    "symfony/validator": {
+        "version": "4.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.3",
+            "ref": "48a8e5ef925e82aa7d665c887cd1fa60f8b7921d"
+        },
+        "files": [
+            "./config/packages/test/validator.yaml",
+            "./config/packages/validator.yaml"
         ]
     },
     "symfony/var-dumper": {
@@ -323,6 +357,24 @@
             "version": "3.3",
             "ref": "dae9b39fd6717970be7601101ce5aa960bf53d9a"
         }
+    },
+    "symfony/webpack-encore-bundle": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "e33393e32759195f8e10c9d4faceb0d232a7e1de"
+        },
+        "files": [
+            "./assets/css/app.css",
+            "./assets/js/app.js",
+            "./config/packages/assets.yaml",
+            "./config/packages/prod/webpack_encore.yaml",
+            "./config/packages/webpack_encore.yaml",
+            "./package.json",
+            "./webpack.config.js"
+        ]
     },
     "symfony/yaml": {
         "version": "v4.3.1"
