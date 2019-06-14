@@ -1,27 +1,11 @@
-<!--menu mobile-->
-<nav class="menu-res hidden-lg hidden-md ">
-    <div class="menu-res-inner">
-        <ul>
-            <li>
-                <a href="{{ path('home') }}">Accueil</a>
-            </li>
-            <li>
-                <a href="{{ path('login') }}">Connexio </a>
-            </li>
-            <li>
-                <a href="{{ path('register') }}">Inscription</a>
-            </li>
-        </ul>
-    </div>
-</nav>
 <div class="page">
     <div class="container">
         <!--header-->
         <header class="header">
             <div class="row">
                 <div class="col-md-3 col-sm-4 col-xs-12">
-                    <a href="#" class="logo">
-                        <img alt="Logo" src="{{ asset('images/logo.png') }}"/>
+                    <a href="{{ path('home') }}" class="logo">
+
                     </a>
                 </div>
             </div>
@@ -33,38 +17,26 @@
                 <span>MENU</span>
             </div>
             <ul class="hidden-sm hidden-xs">
-                <li {% if current == 'home' %} class="current{% endif %}">
-                    <a href="{{ path('home') }}">Accueil</a>
-                </li>
-                <li {% if current == 'login' %} class="current{% endif %}">
-                    <a href="{{ path('login') }}">Connexion</a>
-                </li>
-                <li {% if current == 'register' %} class="current{% endif %}">
-                    <a href="{{ path('register') }}">Inscription</a>
+                <li>
+                    <a href="">Accueil </a>
                 </li>
 
 
-                {#Permet de déterminer si mon visigteur est connécté#}
-                {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                {# Permet de déterminer si mon visiteur est connecté #}
 
-                    <li {{ current == 'connexion' ? 'class="current"' }}>
-                        <a href="{{ path('membre_deconnexion') }}">
-                            Deconnexion
-                        </a>
-                    </li>
-                {% else %}
-                    <li {{ current == 'deconnexion' ? 'class="current"' }}>
-                        <a href="{{ path('membre_connexion') }}">
-                            Connexion
-                        </a>
-                    </li>
-{#                    <li>#}
-{#                        <a href="{{ path('membre_inscription') }}">#}
-{#                            Inscription#}
-{#                        </a>#}
-{#                    </li>#}
-                {% endif %}
+                <li>
+                    <a href="#">Déconnexion</a>
+                </li>
+
+                <li>
+                    <a href="#">Connexion</a>
+                </li>
+                <li>
+                    <a href="#">Inscription</a>
+                </li>
+
             </ul>
+
             <div class="search-icon">
                 <div class="search-icon-inner">
                     <i class="fa fa-search"></i>

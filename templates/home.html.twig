@@ -1,8 +1,18 @@
 {% extends "layout.html.twig" %}
 
 {% block body %}
+
+
+    {% include "components/_nav.html.twig" %}
+
     <div class="container">
     <h1>Page d'acceuil</h1>
     <p>Bienvenue sur ma page</p>
     </div>
+
+
+
+    {% block content '' %}
+
+
 {% endblock %}
