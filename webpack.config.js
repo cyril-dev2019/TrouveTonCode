@@ -1,4 +1,14 @@
+// -- Chargement du CSS
+require('./css/main.scss');
+// -- Chargement du JS
+require('./js/jquery.min');
+require('./js/bootstrap.js');
+require('./js/owl.carousel.min.js');
+require('./js/main.js');
+
 var Encore = require('@symfony/webpack-encore');
+
+
 
 // Manually configure the runtime environment if not already configured yet by the "encore" command.
 // It's useful when you use tools that rely on webpack.config.js file.
@@ -70,5 +80,7 @@ Encore
     //.enableReactPreset()
     //.addEntry('admin', './assets/js/admin.js')
 ;
+
+
 
 module.exports = Encore.getWebpackConfig();
